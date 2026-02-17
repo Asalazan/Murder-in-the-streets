@@ -1,0 +1,361 @@
+/*CUSTOMS*/
+:root{
+    --dark-clr: #181818;
+    --light-clr: #dee1de;
+    --wayne-acc: #56616d;
+    --august-acc:#616763;
+    --jamie-acc: #c3afb7;
+    --belle-acc: #afc8c8;
+}
+
+
+/*BODY*/
+    body{
+        background-color: var(--dark-clr);
+    }
+    a{
+        text-decoration: none;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+    }
+    h1{
+        font-family: "STIX Two Text", serif;
+        font-weight: 700;
+        font-size: 7rem;
+        position: absolute;
+        text-align: right;
+        left: 5%;
+        top: 16%;
+    }
+    .h1-pt2{
+        position: relative;
+        left: 25%;
+    }
+    h2{
+        font-family: "Kreon", serif;
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-weight: 400;
+        border-bottom: 3px solid;
+        max-width: 560px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 2rem ;
+
+    }
+    h3{
+        font-family: "Graduate", serif;
+        text-transform: uppercase;
+        font-size:4rem;
+        font-weight: 300;
+        margin: 1rem;
+    }
+    p{
+        font-family: "IBM Plex Serif", serif;
+        font-size: 2rem;
+        font-weight: 400;
+        margin: 2rem;
+    }
+
+
+/*NAVBAR*/
+    .navbar{
+        background-color: var(--dark-clr);
+        display: flex;
+        font-family: "STIX Two Text", serif;
+        font-weight: 600;
+        font-size: 2.5rem;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .navbar a{
+        color: var(--light-clr);
+        padding:1rem;
+        margin: 0;
+    }
+
+/*HERO*/
+    .hero{
+        background-image: url(../imgs/hero\ img.jpg);
+        background-color: var(--dark-clr);
+        color: var(--light-clr);
+        padding: 15rem;
+        background-size: cover;
+        background-color: #a7a5a5;
+        background-blend-mode: multiply;
+    }
+
+/*ABOUT*/
+    .about{
+        background-color: var(--light-clr);
+        padding: 6rem 2rem;
+    }
+    .about p{
+        text-align: center;
+        max-width: 590px;
+        margin: 0 auto;
+        padding: 6rem;
+    }
+
+
+/*CHARACTERS*/
+    .characters{
+        background-color: var(--dark-clr);
+        background-image: url(../imgs/textures/paper.png);
+        background-size: cover;
+        color: var(--light-clr);
+        padding: 10rem;
+        background-blend-mode: overlay;
+    }
+
+    .characters p{
+        max-width: 590px;
+        min-width: 400px;
+    }
+    .wayne, .august, .jamie, .belle{
+        display: flex;
+        padding: 8rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .august, .belle{
+        text-align: right;
+    }
+    .wayne-btn, .august-btn, .jamie-btn, .belle-btn{
+        text-align: center;
+        border-radius: 4px;
+    }
+    .characters a{
+        color: var(--dark-clr);
+        background-color: var(--light-clr);
+        padding: 0.5rem 3rem;
+        border-radius: 5px;
+        
+    }
+    .august-btn,.belle-btn{
+        text-align: right;
+    }
+
+    .wayne-btn, .jamie-btn{
+        text-align: left;
+    }
+
+/*FOOTER*/
+    footer{
+        background-color: var(--dark-clr);
+        color: var(--light-clr);
+        text-align: center;
+        padding: 4rem;
+    }
+    footer ul{
+        margin: 0 auto;
+        justify-content: center;
+        padding-top: 5rem;
+        align-items: center;
+    }
+    footer img{
+        max-width: 30%;
+    }
+    footer a{
+        margin: 4rem;
+    }
+
+    .title{
+        font-family: "STIX Two Text", serif;
+        font-weight: 700;
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    .tune-in{
+        font-family: "IBM Plex Serif", serif;
+        margin: 0;
+        padding-bottom: 3rem;
+    }
+
+
+
+
+
+    /*FONTS
+
+    font-family: "Graduate", serif;
+    font-family: "IBM Plex Serif", serif;
+    font-family: "Kreon", serif;
+    font-family: "STIX Two Text", serif;
+    */
+
+/*ANIMATIONS/snazzy stuff*/
+    a{
+        transition: 0.2s;
+    }
+    
+    .wayne-btn a:hover, .wayne-btn a:focus{
+        background-color: var(--wayne-acc);
+        color: var(--light-clr);
+    }
+
+    .august-btn a:hover, .august-btn a:focus{
+        background-color: var(--august-acc);
+        color: var(--light-clr);
+    }
+
+    .jamie-btn a:hover, .jamie-btn a:focus{
+        background-color: var(--jamie-acc);
+        color: var(--dark-clr);
+    }
+
+    .belle-btn a:hover, .belle-btn a:focus{
+        background-color: var(--belle-acc);
+        color: var(--dark-clr);
+    }
+
+
+/*SCREEN ADJUSTMENTS*/
+@media(max-width: 870px) {
+
+/*BODY*/
+        h1{
+            font-size: 4rem;
+            top: 23%;
+        }
+        h2{
+            font-size: 3rem;
+            padding: 1rem ;
+        }
+        h3{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+
+/*NAVBAR*/
+    .navbar a{
+        font-size: 2rem;
+    }
+   
+    .navbar img {
+        width: 40px;
+    }
+
+/*HERO*/
+    .hero {
+   padding: 12rem;
+   background-size: cover;
+    }
+
+/*ABOUT*/
+    
+    .about p{
+        padding: 2rem;
+    }
+
+/*CHARACTERS*/
+    .characters{
+        padding: 5rem;
+    }
+
+    .wayne, .august, .jamie, .belle{
+        padding: 6rem;
+    }
+
+    .characters img{
+        width: 300px;
+    }
+
+    .characters p{
+        min-width: 300px;
+    }
+
+/*FOOTER*/
+footer ul{
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 2rem;
+    align-items: center;
+}
+
+footer a{
+    margin: 2rem;
+    width: 80px;
+}
+
+}
+
+@media(max-width: 740px){
+
+    /*BODY*/
+    h1{
+        top: 15%;
+    }
+    h3{
+        font-size: 1.9rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    /*HERO*/
+    .hero{
+        padding: 9rem;
+        background-size: cover;
+        background-position-x: -8px;
+    }
+
+    /*CHARACTERS*/
+    .characters{
+        padding: 5rem;
+    }
+
+    .wayne, .august, .jamie, .belle{
+        padding: 4rem;
+    }
+
+    .characters img{
+        width: 300px;
+    }
+
+    .characters p{
+        min-width: 240px;
+    }
+
+    .characters img{
+        width: 250px;
+    }
+}
+
+@media(max-width: 540px){
+    .wayne, .august, .jamie, .belle{
+        flex-direction: column;
+    }
+    .august-pfp, .belle-pfp{
+        order: -1;
+    }
+    .characters {
+        align-self: center;
+        text-align: center;
+    }
+    .august, .belle {
+        align-self: center;
+        text-align: center;
+    }
+
+    .wayne-btn, .august-btn, .belle-btn, .jamie-btn{
+        align-self: center;
+        text-align: center;
+    }
+}
+
+
+/*FONTS
+
+    font-family: "Graduate", serif;
+    font-family: "IBM Plex Serif", serif;
+    font-family: "Kreon", serif;
+    font-family: "STIX Two Text", serif;
+    */
