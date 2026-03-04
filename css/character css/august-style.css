@@ -76,7 +76,7 @@ main{
     color: var(--light-clr);
     padding: 2rem;
     background-image: url(../../imgs/textures/file.jpg);
-    background-blend-mode: multiply;
+    background-blend-mode: overlay;
 }
 .character-pf p{
      max-width: 380px;
