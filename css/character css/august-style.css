@@ -75,7 +75,7 @@ main{
     background-color: var(--august-acc);
     color: var(--light-clr);
     padding: 2rem;
-    background-image: url(/imgs/textures/file.jpg);
+    background-image: url(../../imgs/textures/file.jpg);
     background-blend-mode: multiply;
 }
 .character-pf p{
