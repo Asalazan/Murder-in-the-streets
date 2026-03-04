@@ -126,7 +126,7 @@ main{
 .character-lineup{
     color: var(--light-clr);
     background-color: #353a37;
-    background-image: url(/imgs/textures/file.jpg);
+    background-image: url(../../imgs/textures/file.jpg);
     background-blend-mode: multiply;
     align-items: center;
 }
